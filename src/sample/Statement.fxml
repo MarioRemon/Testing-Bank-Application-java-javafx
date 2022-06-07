@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Statement">
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="710.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="709.0" fitWidth="800.0" layoutY="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Img/62865d3303873.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="titleStatement" layoutX="293.0" layoutY="64.0" text="Bank Statement" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="showStatementStatement" layoutX="63.0" layoutY="129.0" mnemonicParsing="false" onMousePressed="#pushshowStatementStatement" text="Show Statement" />
+            <Label fx:id="Account1Statement" layoutX="62.0" layoutY="204.0" prefHeight="47.0" prefWidth="125.0" text="Account 1" textFill="WHITE" visible="false" />
+            <Label fx:id="Amount1Statement" layoutX="204.0" layoutY="207.0" prefHeight="38.0" prefWidth="172.0" text="Amount 1" textFill="WHITE" visible="false" />
+            <Label fx:id="account2Statement" layoutX="46.0" layoutY="281.0" prefHeight="32.0" prefWidth="142.0" text="Account 2" textFill="WHITE" visible="false" />
+            <Label fx:id="amount2Statement" layoutX="205.0" layoutY="284.0" prefHeight="26.0" prefWidth="172.0" text="Amount 2" textFill="WHITE" visible="false" />
+            <Button fx:id="backStatement" layoutX="41.0" layoutY="640.0" mnemonicParsing="false" onMousePressed="#pushbackStatement" prefHeight="31.0" prefWidth="73.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
